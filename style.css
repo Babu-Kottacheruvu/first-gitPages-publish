@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+ }
+ html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #F6F6F6;
+ }
+ body ::-webkit-scrollbar{
+    display: none;
+ }
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.nav{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #dadada;
+    padding: 0 3vw;
+}
+.nav h2{
+    padding: 12px;
+}
+.links{
+    display: flex;
+    gap: 5vw;
+    padding: 4vw;
+}
+.links h4{
+    font-size: 1vw;
+}
+.body{
+    display: flex;
+    position: relative;
+    /* flex-wrap: wrap; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left{
+    height: 100%;
+    width: 50%;
+}
+.left .edu{
+    padding: 2vw;
+    font-size: 2.5vw;
+    font-weight: 700;
+    margin-top: 2vw;
+}
+.left span{
+    color: lightseagreen;
+}
+.left .Lorems{
+    padding: 0 2vw;   
+}
+.left button{
+    padding: 1vw 2vw;
+    margin: 2vw;
+    background-color: lightseagreen;
+    color: white;
+    font-size: 1.5vw;
+    border: none;
+    border-radius: 15px;
+}
+.right{
+    height: 100%;
+    width: 50%;
+    padding: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right img{
+    border-radius: 50%;
+    width: 38vw;
+    margin-top: 2vw;
+}
+
+
+
+
+@media (max-width:600px) {
+    .nav{
+        background-color: lightseagreen;
+        color: white;
+    }
+
+    .links h4{
+        font-size: 3.4vw;
+    }
+    .nav h2{
+       font-size: 3.4vw;
+    }
+    .body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        height: 100%;
+    }
+    .left .edu{
+        padding: 15px 15px 0 15px;
+        font-size: 7vw;
+        font-weight: 700;
+        text-align: justify;
+    }
+    .left .Lorems{
+        padding: 15px;
+        font-size: small;
+        font-weight: 100;
+        text-align: left;
+    }
+    .left button{
+       padding: 8 10vw;
+       font-size: large;
+    }
+    .right{
+        width: 100%;
+        height: 100%;
+    }
+    .right img{ 
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        margin-top: 2vw;
+    }
+}
